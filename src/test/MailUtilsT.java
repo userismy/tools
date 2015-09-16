@@ -26,7 +26,7 @@ public class MailUtilsT {
     	  * MailUtils.createsession("邮件服务器地址","用户名","密码")
     	  * 2.邮件内容
     	  * 发件人，收件人，主题，正文
-    	  * 3.发送MailUtils.send(session,mail);
+    	  * 3.发送MailUtils.send(session,mail);邮件发送nnn
     	  */
     	 Session session=MailUtils.createSession("smtp.163.com","nzhang","1247956423qq");
     	 
