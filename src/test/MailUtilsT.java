@@ -15,22 +15,22 @@ import cn.itcast.mail.MailUtils;
 
 /**
  * 
- *ÓÊ¼ş·¢ËÍ
+ *é‚®ä»¶å‘é€
  */
 public class MailUtilsT {
 	@Test
      public void sendmail() throws MessagingException, IOException
      {
     	 /**
-    	  * 1.µÇÂ¼ÓÊ¼ş·şÎñÆ÷
-    	  * MailUtils.createsession("ÓÊ¼ş·şÎñÆ÷µØÖ·","ÓÃ»§Ãû","ÃÜÂë")
-    	  * 2.ÓÊ¼şÄÚÈİ
-    	  * ·¢¼şÈË£¬ÊÕ¼şÈË£¬Ö÷Ìâ£¬ÕıÎÄ
-    	  * 3.·¢ËÍMailUtils.send(session,mail);ÓÊ¼ş·¢ËÍnnn
+    	  * 1.ç™»å½•é‚®ä»¶æœåŠ¡å™¨
+    	  * MailUtils.createsession("é‚®ä»¶æœåŠ¡å™¨åœ°å€","ç”¨æˆ·å","å¯†ç ")
+    	  * 2.é‚®ä»¶å†…å®¹
+    	  * å‘ä»¶äººï¼Œæ”¶ä»¶äººï¼Œä¸»é¢˜ï¼Œæ­£æ–‡
+    	  * 3.å‘é€MailUtils.send(session,mail);é‚®ä»¶å‘é€nnn0000
     	  */
     	 Session session=MailUtils.createSession("smtp.163.com","nzhang","1247956423qq");
     	 
-    	 Mail mail=new Mail("nzhang@myfp","1247956423@qq.com","Title","<a href='http://www.baidu.com'>°Ù¶È</a>");
+    	 Mail mail=new Mail("nzhang@myfp","1247956423@qq.com","Title","<a href='http://www.baidu.com'>ç™¾åº¦</a>");
     	  
     	 MailUtils.send(session, mail);
      }
